@@ -1,0 +1,27 @@
+function filterSymbols(s){
+  let arr = s.split("");
+  let regex = /[a-z0-9]/;
+  let newStr = [];
+
+  for (let i=0; i<arr.length; i++){
+    if(regex.test(arr[i])){
+      newStr.push(arr[i]);
+    }
+  }
+  return newStr.join("");
+}
+
+
+function palindrome(str) {
+
+  let filteredStr = filterSymbols(str.toLowerCase());
+
+ if (filteredStr.split("").reverse().join("") == filteredStr) {
+   return true;
+ } else {
+   return false;
+ }
+}
+
+
+palindrome("1 eye for of 1 eye.");
