@@ -1,22 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&display=swap');
 
+/* Global Styles */
 :root {
     --purple: #5f2280; 
     --green: #1d9537;
 }
 .text-primary {
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
     color: #000 !important;
 }
 body{
-    background-color: var(--green);
     font-family: 'Raleway', sans-serif;
 }
+::-webkit-scrollbar{
+    background-color: #fff;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--green);
+}
+::selection{
+    background-color: rgba(29, 149, 55, .5);
+}
+
+/* End of Global Styles */
+
+/* Header Styles */
 .navbar{
     background-color: #fff;
     width: 100%;
-    
 }
 .img-logo{
     width: 100%;
@@ -24,19 +35,74 @@ body{
 }
 .nav {
     gap: 16px;
+    flex-direction: column;
 }
 .nav-item{
     margin-right: 6px;
 }
+.menu-link{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+.menu-link::after{
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0%;
+    background-color: var(--purple);
+    bottom: 2px;
+    left: 0;
+    transition: .2s;
+}
+.menu-link:hover::after{
+    width: 100%;
+}
+/* End of Header Styles */
 
+main{
+    position: relative;
+}
+/* Footer Styles */
+.footer-flex{
+    background-color: #fff;
+    gap: 26px;
+}
+
+.footer-flex > div{
+    flex: 1;
+}
+.go-up-link{
+    font-size: .8em;
+}
+
+.footer-links > a:hover i.fa-brands{
+    color: var(--purple);
+}
+/* End of Footer Styles */
+
+.projects-grid{
+     margin-bottom: 300px;
+}
+
+.footer-flex{
+    position: fixed;
+    z-index: -10;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 
 @media screen and (min-width: 992px) {
     .container-full{
         max-width: 100vw;
-        padding: 0;
         margin: 0;
         position: relative;
+    }
+    main{
+        margin-left: 25vw;
     }
     .navbar {
         height: 100vh;
@@ -52,23 +118,22 @@ body{
         justify-content: flex-start;
         align-items: flex-start;
     }
-    main .row{
-        margin: 0;
-        padding: 15px 0;
-        margin-left: 25vw;
-
-    }
-    /* main.row .col-4{
-        padding-right: 0;
-    } */
     .nav{
         flex-direction: column;
         padding-left: 10px;
         margin-top: 50px;
     }
+    .row{
+        max-width: 1260px;
+    }
+
+    .footer-flex{
+        left: 25vw;
+        right: 0;
+    } 
 
 }
-.a {
+/* .a {
  background-color: blanchedalmond;
 }
 
@@ -78,4 +143,4 @@ body{
 
 .c {
     background-color: khaki;
-}
+} */
