@@ -2,8 +2,6 @@
 const presPages = document.getElementsByClassName("shop-presentation");
 let currentPage = 0;
 
-// console.log(presPages);
-
 presPages[currentPage].style.display = "initial";
 
 function showPage(data) {
@@ -21,10 +19,6 @@ function showPage(data) {
             break;
     }
 
-    // if(presPages.length < number || number < 1){
-    //     return;
-    // }
-    
     let prevLink  = document.getElementById(`page-link-${currentPage + 1}`);
     let currentLink = document.getElementById(`page-link-${number}`);
     
@@ -49,5 +43,5 @@ function showPage(data) {
     presPages[number-1].style.display = "initial";
     currentPage = number - 1;
     
-
 }
+
