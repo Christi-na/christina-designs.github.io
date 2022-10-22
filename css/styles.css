@@ -179,19 +179,19 @@ main{
     top: 0;
     left: 0;
     padding: 3em;
-
+    
 }
 .cover-link-div{
     height: 100%;
     width: 100%;
     background-color: rgba(255, 255, 255, .7);
-    display: none;
     flex-direction: column;
     justify-content: center;
-
+    display: none;
 }
 
 .cover-link:hover .cover-link-div{
+    
     display: flex;
 }
 /* End of SHOP page styles */
