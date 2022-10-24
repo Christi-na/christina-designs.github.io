@@ -195,3 +195,43 @@ main{
     display: flex;
 }
 /* End of SHOP page styles */
+
+/* CONTACT page */
+.form-label{
+    margin-bottom: 0;
+}
+.form-control{
+    border: 1px solid #777;
+    border-radius: 0;
+}
+.form-control:focus, .form-control:active{
+    border-color: var(--purple);
+    /* box-shadow: none; */
+    box-shadow: 0 0 2px var(--purple);
+}
+.contact-btn{
+    width: 100%;
+    max-width: 260px;
+    background-color: #fff;
+    padding: .375rem .75rem;
+    border: 1px solid #777;
+    border-radius: 0;
+}
+.contact-btn:hover,
+.contact-btn:active,
+.contact-btn:focus{
+    background-color: var(--purple);
+    color: #fff;
+}
+
+.form-control-message{
+    box-sizing: border-box;
+    flex-grow: 1;
+    min-height: 300px;
+}
+
+@media screen and (max-width: 992px) {
+    textarea.form-control-message{
+        min-height: 250px;
+    }
+}

@@ -43,7 +43,59 @@
       </nav>
   
       <main>
-        
+        <div class="my-5 contact-section">
+          <h1 class="fs-6 fw-bold text-center mb-3">
+            Please contact us using the form below, specifying your request, schedule, desired design, and budget.
+          </h1>
+          <p class="text-primary text-center mb-5">
+            You can also contact me directly at ChristinaDesigns@outlook.com.
+          </p>
+
+          <form action="">
+            <div class="row row-cols-1 row-cols-lg-2">
+              <div class="col">
+                <div class="form-group mb-3">
+                  <label for="inputName" class="form-label">
+                    Your name (mandatory)
+                  </label>
+                  <input type="text" class="form-control" id="inputName" required>  
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="inputEmail" class="form-label">
+                    Your e-mail address (mandatory)
+                  </label>
+                  <input type="email" class="form-control" id="inputEmail" required>
+                </div>
+
+                <div class="form-group mb-3">
+                  <label for="inputEmail" class="form-label">
+                    Subject
+                  </label>
+                  <input type="text" class="form-control" id="inputSubject">
+                </div>
+
+              </div>
+
+              <div class="col">
+                <div class="form-group  h-100 d-flex flex-column ">
+                  <label for="inputMessage" class="form-label">
+                    Message
+                  </label>
+                  <textarea  class="form-control form-control-message mb-3 h-lg-30" id="inputMessage" required></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="row my-5">
+              <div class="col d-flex">
+                <button type="submit" class="btn contact-btn m-auto">SEND</button>
+              </div>
+              
+            </div>
+            
+          </form>
+        </div>
       </main>
 
 
