@@ -11,11 +11,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">  
     <!-- My CSS -->
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
-  
+    <link href="../css/mainpage-styles.css" type="text/css" rel="stylesheet">
+
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg justify-content-between">
+
+    <div class="container-lg container-full">
+
+      <nav class="navbar navbar-expand-lg">
         <a href="../index.html">
           <img class="img-logo" src="../pictures/logo-1.png" alt="Christina Designs">
         </a>
@@ -24,8 +27,8 @@
           <i class="fas fa-light fa-plus nav-show-icon"></i>
         </button>
   
-        <div class="collapse navbar-collapse flex-grow-0" id="navMenu">
-          <ul class="navbar-nav nav 0 ps-3">
+        <div class="collapse navbar-collapse align-items-start w-100" id="navMenu">
+          <ul class="navbar-nav nav flex-column w-100  ps-lg-0 ps-3">
             <li class="nav-item">
               <a href="./projects.html" class="text-decoration-none text-primary menu-link nav-link">PROJECTS</a>
             </li>
@@ -42,35 +45,69 @@
         </div>
       </nav>
   
-      <main>
-
-      </main>
-
-
-      <footer class="row d-flex flex-column flex-lg-row py-5 px-2 justify-content-between align-items-center footer-flex">
-        <div class="mx-1 text-center text-lg-start footer-links">
-          <a href="https://www.instagram.com/christina_designs_/" class="me-2 text-decoration-none text-primary fs-3" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-          <a href="https://www.behance.net/ChristinaTim" class="me-2 text-decoration-none text-primary fs-3" target="_blank">
-            <i class="fa-brands fa-behance"></i>
-          </a>
-          <a href="https://dribbble.com/ChristinaDesigns" class="text-decoration-none text-primary fs-3" target="_blank">
-            <i class="fa-brands fa-dribbble"></i>
-          </a>
-        </div>
-        <div class="mx-1 text-center order-first order-lg-0">
-          <a href="#" class="text-decoration-none text-muted go-up-link">
-            Go to top <i class="fas fa-light fa-arrow-up"></i>
-          </a>
-        </div>
-        <div class="mx-1 text-center text-lg-end">
-          <p class="fw-bold fs-5 mb-0">Let’s keep in touch</p>
-          <a href="#" class="text-decoration-none text-primary">Contact us</a>
-        </div>
-      </footer>
-    </div>
   
+      <main>
+        <div class="row row-cols-lg-3 row-cols-md-2 mt-5 projects-grid pt-4 bg-light">
+          <div class="col">
+            <img src="../pictures/my-portret.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col">
+            <p class="">
+              Hi there!
+            </p>
+            My name is Christina. I'am full time Graphic Designer & 
+            Illustrator with over 3 years of experience, I’ve acquired a wealth of knowledge in the digital design space.
+            <p>
+            <p>
+              I'm specialized in hand-drawn vector illustrations (clip art, banners, social media templates) and watercolor 
+              illustrations (patterns, textures). Also I succeed in coloring pages making.
+            </p>
+            <p>
+              I'm specialized in hand-drawn vector illustrations (clip art, banners, social media templates) and watercolor 
+              illustrations (patterns, textures). Also I succeed in coloring pages making.
+              I always try to follow trends and develop my skills to create modern and marketable design.
+            </p>
+
+            </p>
+          </div>
+          <div class="col">
+            <p class="">
+              Hi! I am drawing and creating designs more than 5 years. I’ve acquired a wealth of knowledge in the digital design space, making illustrations for books, creating templates for social media and drawing coloring pages. This lets me to understand designer and customer needs and requirements.
+I specialize in hand-drawn vector illustrations such as clip art, flat style drawings and social media templates. I also have a big collection of coloring pages for kids and adults.
+I always try to follow trends and develop my skills to create a modern and marketable design. I would be happy to join the Creative Market community and bring something new for your customers.
+
+            </p>
+          </div>
+        </div>
+
+  
+        <div class="row d-flex flex-column flex-lg-row py-5 px-2 justify-content-between align-items-center footer-flex">
+          <div class="mx-1 text-center text-lg-start footer-links">
+            <a href="https://www.instagram.com/christina_designs_/" class="me-2 text-decoration-none text-primary fs-3" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.behance.net/ChristinaTim" class="me-2 text-decoration-none text-primary fs-3" target="_blank">
+              <i class="fa-brands fa-behance"></i>
+            </a>
+            <a href="https://dribbble.com/ChristinaDesigns" class="text-decoration-none text-primary fs-3" target="_blank">
+              <i class="fa-brands fa-dribbble"></i>
+            </a>
+          </div>
+          <div class="mx-1 text-center order-first order-lg-0">
+            <a href="#" class="text-decoration-none text-muted go-up-link">
+              Go to top <i class="fas fa-light fa-arrow-up"></i>
+            </a>
+          </div>
+          <div class="mx-1 text-center text-lg-end">
+            <p class="fw-bold fs-5 mb-0">Let’s keep in touch</p>
+            <a href="./contact.html" class="text-decoration-none text-primary">Contact us</a>
+          </div>
+        </div>
+  
+      </main>
+  
+  
+    </div>
   
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

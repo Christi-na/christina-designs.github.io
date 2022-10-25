@@ -107,7 +107,7 @@ main{
 
 
 .projects-grid{
-     margin-bottom: 300px;
+    margin-bottom: 300px;
 }
 
 
@@ -225,13 +225,30 @@ main{
 }
 
 .form-control-message{
-    box-sizing: border-box;
     flex-grow: 1;
-    min-height: 300px;
 }
 
 @media screen and (max-width: 992px) {
     textarea.form-control-message{
         min-height: 250px;
+    }
+}
+/* End of CONTACT page */
+
+/* PROJECTS page */
+.projects-heading{
+    top: 30%;
+    animation-name: fadeText;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadeText{
+    0%{
+        transform: translateX(-200px);
+
+    }
+    100%{
+        transform: translateX(0);
     }
 }
