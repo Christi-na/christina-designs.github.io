@@ -252,3 +252,44 @@ main{
         transform: translateX(0);
     }
 }
+.about-grid > div > p{
+    font-size: 16px;
+}
+
+
+/* ABOUT ME */
+.img-portret{
+    width: 100%;
+    z-index: 99;
+    position: relative;
+}
+.img-portret-bg{
+    display: none;
+    position: absolute;
+    width: 40%;
+    height: 70%;
+    background-color: var(--green);
+    z-index: 1;
+}
+@media screen and (max-width: 992px) {
+    .img-portret{
+        margin: 40px;
+        margin-left: 22%;
+        max-width: 400px;
+    }
+    .img-portret-bg{
+        display: block;
+        right: 10%;
+        top: 5px;
+    }
+}
+@media screen and (max-width: 600px){
+    .img-portret{
+        margin:  0;
+        max-width: none;
+        box-shadow: 5px 5px  0 5px var(--green);
+    }
+    .img-portret-bg{
+        display: unset;
+    }
+}
