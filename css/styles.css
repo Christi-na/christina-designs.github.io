@@ -2,9 +2,11 @@
 
 /* Global Styles */
 :root {
+    --lightness: 10%;
     --purple: #5f2280; 
     --green: #1d9537;
     --lightgreen: rgba(29, 149, 55, .5);
+    --backgroundColor: hsl(0, 0%, var(--lightness));
 }
 .text-primary {
     font-family: 'Raleway', sans-serif;
@@ -179,19 +181,22 @@ main{
     top: 0;
     left: 0;
     padding: 3em;
-    
+
 }
 .cover-link-div{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, .7);
+    height: 50px;
+    /* height: 100%; */
+    width: 200px;
+    /* width: 100%; */
+    background-color: rgba(255, 255, 255, 1);
     flex-direction: column;
     justify-content: center;
     display: none;
 }
-
+.cover-link-div > p{
+    margin: auto;
+}
 .cover-link:hover .cover-link-div{
-    
     display: flex;
 }
 /* End of SHOP page styles */
@@ -238,20 +243,11 @@ main{
 /* PROJECTS page */
 .projects-heading{
     top: 30%;
-    animation-name: fadeText;
+    animation-name: fadeTextLeft;
     animation-duration: 1s;
     animation-iteration-count: 1;
 }
 
-@keyframes fadeText{
-    0%{
-        transform: translateX(-200px);
-
-    }
-    100%{
-        transform: translateX(0);
-    }
-}
 .about-grid > div > p{
     font-size: 16px;
 }
@@ -292,4 +288,66 @@ main{
     .img-portret-bg{
         display: unset;
     }
+}
+
+.heading{
+    font-size: 2.5em;
+}
+.about-header{
+    top: 40%;
+    /* opacity: 0; */
+}
+.about-header.active{
+    animation-name: fadeTextLeft;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+}
+.experiance-header{
+    right: 1.5em;
+    top: 20px;
+    color: #fff;
+    opacity: 0;
+}
+.experiance-header.active{
+    animation-name: fadeTextRight;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+}
+
+.process-header{
+    top: 30%;
+    opacity: 0;
+}
+.process-header.active{
+    animation-name: fadeTextLeft;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    opacity: 1;
+}
+/* KEYFRAMES */
+@keyframes fadeTextLeft{
+    0%{
+        transform: translateX(-200px);
+
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes fadeTextRight{
+    0%{
+        transform: translateX(+200px);
+
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+.experience-section{
+    min-height: 100vh;
+    background-color: var(--backgroundColor);
 }

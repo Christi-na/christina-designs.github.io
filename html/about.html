@@ -11,14 +11,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">  
     <!-- My CSS -->
     <link href="../css/styles.css" type="text/css" rel="stylesheet">
-    <link href="../css/mainpage-styles.css" type="text/css" rel="stylesheet">
+    <!-- <link href="../css/mainpage-styles.css" type="text/css" rel="stylesheet"> -->
 
   </head>
   <body>
-
-    <div class="container-lg container-full">
-
-      <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg justify-content-between">
         <a href="../index.html">
           <img class="img-logo" src="../pictures/logo-1.png" alt="Christina Designs">
         </a>
@@ -27,8 +25,8 @@
           <i class="fas fa-light fa-plus nav-show-icon"></i>
         </button>
   
-        <div class="collapse navbar-collapse align-items-start w-100" id="navMenu">
-          <ul class="navbar-nav nav flex-column w-100  ps-lg-0 ps-3">
+        <div class="collapse navbar-collapse flex-grow-0" id="navMenu">
+          <ul class="navbar-nav nav 0 ps-3">
             <li class="nav-item">
               <a href="./projects.html" class="text-decoration-none text-primary menu-link nav-link">PROJECTS</a>
             </li>
@@ -44,12 +42,19 @@
           </ul>
         </div>
       </nav>
-  
-  
+    </div>
+
+    <div class="container-fluid p-0 overflow-hidden">
+
       <main>
-        <div class="row mt-5 about-grid pt-4 bg-white">
+        <div class="position-relative pt-5 ps-4">
+          <h1 class="fw-bold heading position-absolute about-header">
+            About me
+          </h1>
+        </div>
+        <div class="row w-100 mt-5 pt-4 px-4 about-grid  bg-white">
           <div class="col col-12 col-lg-4 mb-3 position-relative">
-            <img src="../pictures/avatarka.jpg" class="img-portret" alt="">
+            <img src="../pictures/avatarka.jpg" class="img-portret " alt="">
             <div class="img-portret-bg"></div>
           </div>
           <div class="col col-12 col-sm-6 col-md-6 col-lg-4">
@@ -69,7 +74,7 @@
             </p>
 
           </div>
-          <div class="col col-12 col-sm-6 col-md-6 col-lg-4">
+          <div class="col col-12 col-sm-6 col-md-6 col-lg-4 ">
             <p class="">
               Sveiks!
             </p>
@@ -88,58 +93,69 @@
           </div>
         </div>
 
-        <div class="row bg-light my-5">
-          <h3>Experience</h3>
+        <div id="experience-section" class="position-relative mt-5 pt-5 pe-4 experience-section">
+          <h2 class="fw-bold heading position-absolute experiance-header">
+            Experience
+          </h2>
+        </div>
+        <div class="row w-100 bg-light my-5">
           <div class="col">Client1</div>
           <div class="col">Client2</div>
           <div class="col">Client3</div>
         </div>
 
-        <div class="row my-5">
-          <h3>Working Process</h3>
-          <div class="col-lg-4">
-            <video class="w-100" src="../pictures/projects/wider-former-mp4.mp4" type="video/mp4" autoplay controls></video>
-          </div>
-          <div class="col-lg-8">
+        <div class="position-relative pt-5 ps-4 ">
+          <h2 class="fw-bold heading position-absolute process-header">
+            Working Process
+          </h2>
+        </div>
+
+        <div class="row w-100 my-5 bg-white">
+          
+          <div class="col-lg-8 col-md-6 order-sm-1">
             <p>
               Galvenokārt es nodarbojos ar vektora grafiku, zimēju ilustrācijas infografikai, "clip art" zimējumus, ka arī 
               taisu reklāmas banerus, brošuras, grafiku biznesa un bloģeru sociāla tīkla kontiem.
               Mana galvenā specializācija ir krāsojamo grāmatu illustrēšana. 
             </p>
           </div>
+          <div class="col-lg-4 col-md-6 ">
+            <video class="w-100" src="../pictures/projects/girl-drawing.mp4" type="video/mp4" 
+            muted loop autoplay></video>
+          </div>
         </div>
 
-  
-        <div class="row d-flex flex-column flex-lg-row py-5 px-2 justify-content-between align-items-center footer-flex">
-          <div class="mx-1 text-center text-lg-start footer-links">
-            <a href="https://www.instagram.com/christina_designs_/" class="me-2 text-decoration-none text-primary fs-3" target="_blank">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.behance.net/ChristinaTim" class="me-2 text-decoration-none text-primary fs-3" target="_blank">
-              <i class="fa-brands fa-behance"></i>
-            </a>
-            <a href="https://dribbble.com/ChristinaDesigns" class="text-decoration-none text-primary fs-3" target="_blank">
-              <i class="fa-brands fa-dribbble"></i>
-            </a>
-          </div>
-          <div class="mx-1 text-center order-first order-lg-0">
-            <a href="#" class="text-decoration-none text-muted go-up-link">
-              Go to top <i class="fas fa-light fa-arrow-up"></i>
-            </a>
-          </div>
-          <div class="mx-1 text-center text-lg-end">
-            <p class="fw-bold fs-5 mb-0">Let’s keep in touch</p>
-            <a href="./contact.html" class="text-decoration-none text-primary">Contact us</a>
-          </div>
-        </div>
-  
       </main>
-  
-  
+    </div>
+
+    <div class="container">
+      <footer class="row d-flex flex-column flex-lg-row py-5 px-2 justify-content-between align-items-center footer-flex">
+        <div class="mx-1 text-center text-lg-start footer-links">
+          <a href="https://www.instagram.com/christina_designs_/" class="me-2 text-decoration-none text-primary fs-3" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.behance.net/ChristinaTim" class="me-2 text-decoration-none text-primary fs-3" target="_blank">
+            <i class="fa-brands fa-behance"></i>
+          </a>
+          <a href="https://dribbble.com/ChristinaDesigns" class="text-decoration-none text-primary fs-3" target="_blank">
+            <i class="fa-brands fa-dribbble"></i>
+          </a>
+        </div>
+        <div class="mx-1 text-center order-first order-lg-0">
+          <a href="#" class="text-decoration-none text-muted go-up-link">
+            Go to top <i class="fas fa-light fa-arrow-up"></i>
+          </a>
+        </div>
+        <div class="mx-1 text-center text-lg-end">
+          <p class="fw-bold fs-5 mb-0">Let’s keep in touch</p>
+          <a href="#" class="text-decoration-none text-primary">Contact us</a>
+        </div>
+      </footer>
     </div>
   
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="../js/js-animation.js"></script>
   </body>
 
 </html>
