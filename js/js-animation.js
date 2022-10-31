@@ -20,7 +20,7 @@ function reveal(){
 
     if(sectionBottom <= innerHeight/2 && sectionBottom >= 0){
 
-        let lightness = 100 - (sectionBottom - 50) * 90 / (innerHeight/2 - 50);
+        let lightness = 100 - (sectionBottom - 100) * 90 / (innerHeight/2 - 100);
         document.documentElement.style.setProperty('--lightness', `${lightness}%`);
 
     } else {

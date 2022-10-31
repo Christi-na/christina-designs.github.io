@@ -349,5 +349,47 @@ main{
 
 .experience-section{
     min-height: 100vh;
+    padding: 30px 0;
     background-color: var(--backgroundColor);
+    cursor: url(../pictures/cursor-1.svg), auto;
+}
+.experience-row{
+    color: #fff;
+    margin: 0 8%;
+}
+.col-left{
+    padding-left: 8%;
+}
+.col-right{
+    padding-right: 8%;
+}
+.project-num{
+    font-size: 80px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    line-height: .8em
+}
+.project-pr{
+    font-size: .8em;
+}
+.experience-img-box-right{
+    transform: rotate(5deg);
+    transition: .5s ease;
+}
+.experience-img-box-right:hover{
+    transform: rotate(0deg);
+}
+.experience-row > .col p, 
+.experience-row > .col h3,
+.experience-row > .col img{
+    cursor: url(../pictures/cursor-2.svg), auto;
+}
+
+.experience-img-box-left{
+    transform: rotate(-5deg);
+    transition: .5s ease;
+}
+.experience-img-box-left:hover{
+    transform: rotate(0deg);
 }
