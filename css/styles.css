@@ -346,15 +346,15 @@ main{
     }
 }
 
-
 .experience-section{
-    min-height: 100vh;
-    padding: 30px 0;
-    background-color: var(--backgroundColor);
     cursor: url(../pictures/cursor-1.svg), auto;
 }
-.experience-row{
+.experience-dark-section{
+    padding: 30px 0;
+    background-color: var(--backgroundColor);
     color: #fff;
+}
+.experience-row{
     margin: 0 8%;
 }
 .col-left{
@@ -392,4 +392,15 @@ main{
 }
 .experience-img-box-left:hover{
     transform: rotate(0deg);
+}
+.dark-bg{
+    position: absolute;
+    margin: 0;
+    width: 100vw;
+    height: 20%;
+    background-color: var(--backgroundColor);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -5;
 }

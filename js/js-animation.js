@@ -1,7 +1,7 @@
 // Animation on scroll
 function reveal(){
     let reveals = document.querySelectorAll('.heading');
-    let section = document.getElementById('experience-section');
+    let section = document.getElementById('experience-dark-section');
 
     for( let i = 0; i < reveals.length; i++){
         let innerHeight = window.innerHeight;
