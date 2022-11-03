@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
 
 /* Global Styles */
 :root {
@@ -11,6 +12,11 @@
 .text-primary {
     font-family: 'Raleway', sans-serif;
     color: #000 !important;
+}
+.font-cursive{
+    font-family: 'Qwigley', cursive;
+    font-size: 2em;
+    line-height: 1em;
 }
 body{
     font-family: 'Raleway', sans-serif;
@@ -201,7 +207,7 @@ main{
 }
 /* End of SHOP page styles */
 
-/* CONTACT page */
+/* ---------------------------------CONTACT page ----------------------*/
 .form-label{
     margin-bottom: 0;
 }
@@ -253,7 +259,7 @@ main{
 }
 
 
-/* ABOUT ME */
+/* -----------------------------ABOUT ME ------------------------------*/
 .img-portret{
     width: 100%;
     z-index: 99;
@@ -267,35 +273,12 @@ main{
     background-color: var(--green);
     z-index: 1;
 }
-@media screen and (max-width: 992px) {
-    .img-portret{
-        margin: 40px;
-        margin-left: 22%;
-        max-width: 400px;
-    }
-    .img-portret-bg{
-        display: block;
-        right: 10%;
-        top: 5px;
-    }
-}
-@media screen and (max-width: 600px){
-    .img-portret{
-        margin:  0;
-        max-width: none;
-        box-shadow: 5px 5px  0 5px var(--green);
-    }
-    .img-portret-bg{
-        display: unset;
-    }
-}
 
 .heading{
     font-size: 2.5em;
 }
 .about-header{
     top: 40%;
-    /* opacity: 0; */
 }
 .about-header.active{
     animation-name: fadeTextLeft;
@@ -374,10 +357,17 @@ main{
     font-size: .8em;
 }
 .experience-img-box-right{
-    transform: rotate(5deg);
+    transform: rotate(3deg);
     transition: .5s ease;
 }
 .experience-img-box-right:hover{
+    transform: rotate(0deg);
+}
+.experience-img-box-left{
+    transform: rotate(-3deg);
+    transition: .5s ease;
+}
+.experience-img-box-left:hover{
     transform: rotate(0deg);
 }
 .experience-row > .col p, 
@@ -385,22 +375,54 @@ main{
 .experience-row > .col img{
     cursor: url(../pictures/cursor-2.svg), auto;
 }
+.experience-row > p{
+    max-width: 1200px;
+    margin: auto;
+}
 
-.experience-img-box-left{
-    transform: rotate(-5deg);
-    transition: .5s ease;
-}
-.experience-img-box-left:hover{
-    transform: rotate(0deg);
-}
 .dark-bg{
     position: absolute;
     margin: 0;
     width: 100vw;
     height: 20%;
     background-color: var(--backgroundColor);
-    bottom: 0;
-    left: 0;
-    right: 0;
     z-index: -5;
+}
+.process-video-div > video{
+    max-width: 1280px;
+}
+@media screen and (max-width: 992px) {
+    .img-portret{
+        margin: 40px;
+        margin-left: 22%;
+        max-width: 400px;
+    }
+    .img-portret-bg{
+        display: block;
+        right: 10%;
+        top: 5px;
+    }
+    .col-left, .col-right{
+        padding: 0;
+    }
+    .experience-img-box-left, .experience-img-box-right{
+        transform: rotate(0);
+    }
+}
+@media screen and (max-width: 768px) {
+    .experience-title{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 600px){
+    .img-portret{
+        margin:  0;
+        max-width: none;
+        box-shadow: 10px 10px 0 0 var(--green);
+    }
+    .img-portret-bg{
+        display: unset;
+    }
 }
