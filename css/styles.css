@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
 
-/* Global Styles */
+/* ---------------------Global Styles -------------------------*/
 :root {
     --lightness: 10%;
     --purple: #5f2280; 
@@ -34,7 +34,7 @@ body{
 
 /* End of Global Styles */
 
-/* Header Styles */
+/* ----------------------------Header Styles-------------------------- */
 .navbar{
     background-color: #fff;
     width: 100%;
@@ -88,6 +88,44 @@ body{
     animation-duration: 1s;
     animation-iteration-count: 1;
 }
+
+.intro{
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 199;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text .text{
+    color: var(--green);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.slider{
+    background-color: rgb(137, 137, 137);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 199;
+    transform: translateY(100%);
+}
+.hide{
+    background-color: #000;
+    overflow: hidden;
+}
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
+
+
 /* End of Header Styles */
 
 main{
@@ -95,7 +133,7 @@ main{
 }
 
 
-/* Footer Styles */
+/* -------------------------Footer Styles --------------------------*/
 .footer-flex{
     background-color: #fff;
     gap: 26px;
