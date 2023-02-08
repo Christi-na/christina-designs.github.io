@@ -107,7 +107,7 @@ body{
     font-weight: bold;
 }
 .slider{
-    background-color: rgb(137, 137, 137);
+    background-color: var(--purple);
     position: fixed;
     top: 0;
     left: 0;
